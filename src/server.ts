@@ -7,7 +7,7 @@ import {generateAICompletionRoute} from './routes/generate-ai-completion'
 const app = fastify()
 
 app.register(fastifyCors,{
-    origin: '*',
+    origin: ['http://localhost:5173'],
 })
 
 app.register(getAllPromptsRoute)
